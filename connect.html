@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
+    <link rel="stylesheet" href="styles/connect.css">
+    <script type="module" src="scripts/scripts.js" defer></script>
+    <title>Connect | Ian Herrera</title>
+</head>
+
+<body>
+
+    <div class="bg-wrap">
+    </div>
+    
+    <header>
+        <!--Nav Bar w/ Name-->
+        <div id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="name-container">
+            <h1 id="name">IAN HERRERA</h1>
+        </div>
+        <nav id="nav">
+            <!--About/Experience/Skillset/Portfolio/Connect-->
+            <ul>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="connect.html">Connect</a>
+                </li>
+            </ul>
+        </nav>
+        <!--/ Nav Bar w/ Name-->
+    </header>
+
+    <div class="main-wrap">
+
+        <main>
+
+            <section id="connect-container">
+                <h1 class="title">Connect</h1>
+                <section id="form-container">
+                    <form method="post" id="connect-form">
+                        <!--Name-->
+                        <span class="contact-field"><label for="nameInput">Name</label><input type="text"
+                                class="contact-field" id="nameInput" name="contactName" required></span>
+                        <span class="contact-field"><label for="email">Email</label><input type="email"
+                                class="contact-field" id="email" name="contactEmail" required></span>
+                        <span class="contact-field"><label for="message">Message</label><textarea class="contact-field"
+                                id="message" name="contactMessage" required></textarea></span>
+                        <!-- 						<div class="g-recaptcha" data-sitekey="6Ldc0mIgAAAAADVQ0ocOVSplqnxZjKBJ9LYteHeV"></div> -->
+                        <span class="contact-field"><input type="submit" value="Submit" class="form-submit"></span>
+                    </form>
+                </section>
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <!--Footer-->
+        <h4>&copy; Copyright <span id="year"></span> - Ian Herrera</h4>
+    </footer>
+
+</body>
+
+</html>
