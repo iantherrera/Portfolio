@@ -1,71 +1,3 @@
-/* fontsUsed {
-Josefin Sans
-Regular 400
-Regular 400 Italic
-SemiBold 600
-SemiBold 600 Italic
-} */
-
-colorPalettes {
-    --key-lime: #e1f1a7ff;
-    --yellow-green-crayola: #b5e48cff;
-    --granny-smith-apple: #99d98cff;
-    --ocean-green: #76c893ff;
-    --keppel: #52b69aff;
-    --viridian-green: #34a0a4ff;
-    --blue-munsell: #168aadff;
-    --cg-blue: #1a759fff;
-    --lapis-lazuli: #1e6091ff;
-    --indigo-dye: #144367ff;
-
-    /* CSS HEX */
-    --midnight-blue: #03045eff;
-    --dark-cornflower-blue: #023e8aff;
-    --star-command-blue: #0077b6ff;
-    --blue-green: #0096c7ff;
-    --pacific-blue: #00b4d8ff;
-    --sky-blue-crayola: #48cae4ff;
-    --middle-blue: #90e0efff;
-    --blizzard-blue: #ade8f4ff;
-    --light-cyan: #caf0f8ff;
-
-    /* SCSS RGB */
-    --midnight-blue: rgba(3, 4, 94, 1);
-    --dark-cornflower-blue: rgba(2, 62, 138, 1);
-    --star-command-blue: rgba(0, 119, 182, 1);
-    --blue-green: rgba(0, 150, 199, 1);
-    --pacific-blue: rgba(0, 180, 216, 1);
-    --sky-blue-crayola: rgba(72, 202, 228, 1);
-    --middle-blue: rgba(144, 224, 239, 1);
-    --blizzard-blue: rgba(173, 232, 244, 1);
-    --light-cyan: rgba(202, 240, 248, 1);
-
-    /* CSS HEX */
-    --indigo-dye: rgb(12, 62, 94);
-    --indigo-dye: rgb(9, 40, 60);
-    --lapis-lazuli: #155b87;
-    --green-blue-crayola: #2d92d1ff;
-    --aero: #74bbe8ff;
-    --light-cornflower-blue: #97d1f4ff;
-    --castleton-green: #0c5e50ff;
-    --generic-viridian: #158774ff;
-    --turquoise: #2ed1b5ff;
-    --turquoise-2: #74e8d4ff;
-    --middle-blue-green: #97f4e5ff;
-
-    /* SCSS RGB */
-    --light-cornflower-blue: rgba(142, 202, 230, 1);
-    --dark-sky-blue: rgba(115, 191, 220, 1);
-    --maximum-blue: rgba(88, 180, 209, 1);
-    --blue-green: rgba(33, 158, 188, 1);
-    --blue-sapphire: rgba(18, 103, 130, 1);
-    --prussian-blue: rgba(2, 48, 71, 1);
-    --selective-yellow: rgba(255, 183, 3, 1);
-    --orange-peel: rgba(253, 158, 2, 1);
-    --tangerine: rgba(251, 133, 0, 1);
-    --dark-orange: rgba(251, 144, 23, 1);
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -97,17 +29,6 @@ body {
     z-index: -2;
 }
 
-.main-wrap {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: auto;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-}
-
 header {
     background-color: rgb(13, 27, 53, .5);
     color: #caf0f8ff;
@@ -116,6 +37,7 @@ header {
     flex-basis: 100%;
     flex-wrap: wrap;
     min-height: 1em;
+    transition: height ease-in-out 1s;
 }
 
 #name-container {
@@ -169,28 +91,40 @@ nav a:visited {
     color: rgb(104, 197, 227);
 }
 
-section a {
+nav a:hover {
+    border-bottom: solid rgb(104, 197, 227);
+}
+
+#coding a {
     color: rgb(0, 119, 182);
     font-weight: 600;
     text-decoration: none;
 }
 
-section a:visited {
+#coding a:visited {
     color: rgb(13, 27, 53);
 }
 
-nav a:hover {
-    border-bottom: solid rgb(104, 197, 227);
+#coding a:hover {
+    color: rgb(251, 133, 0);
 }
 
-section a:hover {
-    color: rgb(251, 133, 0);
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
     max-width: 1000px;
     width: 90%;
-    margin: 1em 5% 1em 5%;
+    margin: 2em 5% 1em 5%;
+    gap: 2em;
 }
 
 @keyframes slideFromBottom {
@@ -208,21 +142,16 @@ main {
         transform: scale(1);
     }
 
-    20% {
-        transform: scale(.8);
+    10% {
+        transform: scale(.9);
     }
-/* 
-    40% {
-        transform: scale(1.1);
-    }
- */
+
     100% {
         transform: scale(1);
     }
 }
 
-main>section,
-#skill-text {
+main>section {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -234,18 +163,15 @@ main>section,
     animation: 1s ease-out 0s 1 slideFromBottom;
 }
 
-main>section>section {
+.bubble-frame {
     display: flex;
+    flex-wrap: wrap;
     background-color: rgba(202, 240, 248, .7);
-    margin-top: 1em;
     padding: .3em;
     border-radius: 20px;
     border-bottom: 3px solid black;
-}
-
-section {
     align-self: center;
-    animation: 1.4s ease-out 0s 1 slideFromBottom;
+    animation: 1s ease-out 0s 1 slideFromBottom;
 }
 
 label {
@@ -262,7 +188,6 @@ label {
 
 h1 {
     color: #caf0f8ff;
-    text-transform: uppercase;
 }
 
 h3 {
@@ -273,11 +198,6 @@ h4 {
     color: #caf0f8ff;
 }
 
-section ul {
-    list-style-type: none;
-    display: flex;
-}
-
 .title {
     display: inline-block;
     align-self: center;
@@ -285,6 +205,7 @@ section ul {
     margin-bottom: .5em;
     width: 100%;
     border-bottom: 5px double #caf0f8ff;
+    text-transform: uppercase;
 }
 
 footer {

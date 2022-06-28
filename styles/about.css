@@ -6,7 +6,7 @@ main {
         "headshot headshot"
         "about about"
         "experience experience";
-    gap: 2em;
+
     align-self: center;
 }
 
