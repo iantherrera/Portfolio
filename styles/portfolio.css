@@ -28,6 +28,7 @@ ul {
     margin: 1em;
     padding: .5em;
     border-radius: 5px;
+    flex: 0 0 auto;
 }
 
 #git-link {
@@ -37,8 +38,11 @@ ul {
 
 #design {
     flex-grow: 1;
+    flex-wrap: nowrap;
+    width: 90%;
     align-items: center;
     animation: none;
     padding: 1em;
     justify-content: space-around;
+    overflow-x: auto;
 }
