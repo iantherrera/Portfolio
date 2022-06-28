@@ -4,26 +4,26 @@
 
 # Project Overview:
 
-## Responsive portfolio website will consist of 3 pages: “About”, “Portfolio”, “Connect” 
+## Responsive portfolio website will consist of 3 pages: 
 
-### “About” page contents:
-- Headshot photo
-- Biographical information
-- Experience information
+- ### “About” page contents:
+  - Headshot photo
+  - Biographical information
+  - Experience information
 
-### “Portfolio” page contents:
-- Skillset information
-- Software & language proficiencies
-- Link to GitHub for future & current coding projects
-- Design portfolio from previous projects
+- ### “Portfolio” page contents:
+  - Skillset information
+  - Software & language proficiencies
+  - Link to GitHub for future & current coding projects
+  - Design portfolio
 
-### “Connect” page contents:
-- Fields for collecting
-  - Name
-  - Email
-  - Message
-- Submit button
-- Captcha or similar security for bots
+- ### “Connect” page contents:
+  - Fields for collecting
+    - Name
+    - Email
+    - Message
+  - Submit button
+  - Captcha or similar security for bots
 
 # Capstone Project Requirement Goals:
 
