@@ -40,9 +40,11 @@ ul {
     flex-grow: 1;
     flex-wrap: nowrap;
     width: 90%;
+    max-width: 600px;
     align-items: center;
     animation: none;
     padding: 1em;
-    justify-content: space-around;
     overflow-x: auto;
+    scrollbar-color: rgb(0, 119, 182) rgb(104, 197, 227);
+    scrollbar-width: thin;
 }

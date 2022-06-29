@@ -43,8 +43,8 @@ img {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
-    max-height: 600px;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 #caption {
