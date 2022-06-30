@@ -22,13 +22,13 @@ window.addEventListener('resize', () => {
     hamburger.classList.remove('open');
   } else if (window.innerWidth < 600 && navMenu.style.height !== 0) {
     navMenu.style.height = 0;
+    hamburger.classList.remove('open');
   }
 });
 //Hamburger menu
 
 
-//Scrollbar visibility
-// Wait for section animations to end for scrollbar to appear
+//Scrollbar hidden during animations
 // Reference section elements
 const section = document.getElementsByTagName('section')[0];
 
@@ -58,17 +58,27 @@ var captionText = document.getElementById("caption");
 for (var i = 0; i < images.length; i++) {
   var img = images[i];
   // Add click listener for image
-  img.onclick = function(evt) {
+  img.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
   }
 }
 
-// Modal close functionality
+// Modal close functionality //
+// Close modal by clicking on close span
 var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() {
   modal.style.display = "none";
 }
-// Lightbox modals
+
+//Close modal by clicking anywhere in modal box outside of image
+var modalBox = document.getElementsByClassName('modal')[0]
+
+window.onclick = function(event) {
+  if (event.target == modalBox) {
+    modal.style.display = "none";
+  }
+}
+// Modal close functionality //
