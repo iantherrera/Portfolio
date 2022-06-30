@@ -2,6 +2,10 @@
 ### Website Capstone Project for CODE Louisville & personal professional portfolio page
 *by Ian Herrera*
 
+[Portfolio Website](https://iantherrera.github.io/Portfolio/)
+
+[Project notes & wireframes](https://drive.google.com/file/d/1ZWJ9nSAYxI09EU6xMQwX4jmH5hyXAI-z/view?usp=sharing)
+
 # Project Overview:
 
 ## Responsive portfolio website will consist of 3 pages: 
