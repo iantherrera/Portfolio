@@ -47,7 +47,7 @@ header {
     justify-content: center;
     padding-top: .7em;
     padding-left: .7em;
-    transition: font-size 0.3s;
+    transition: font-size 300ms;
 }
 
 #name {
@@ -64,7 +64,7 @@ nav {
     height: 0;
     width: 100%;
     overflow: hidden;
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out 150ms;
 }
 
 nav ul {
@@ -84,7 +84,7 @@ nav a {
     text-decoration: none;
     font-size: 1.5em;
     border-bottom: solid transparent 2px;
-    transition: border-bottom .3s;
+    transition: border-bottom ease-in 300ms;
 }
 
 nav a:visited {
@@ -160,7 +160,7 @@ main>section {
     text-align: center;
     padding: 1.5em;
     border-radius: 20px;
-    animation: 1s ease-out 0s 1 slideFromBottom;
+    animation: 600ms ease-out 0s 1 slideFromBottom;
 }
 
 .bubble-frame {
@@ -171,19 +171,15 @@ main>section {
     border-radius: 20px;
     border-bottom: 3px solid black;
     align-self: center;
-    animation: 1s ease-out 0s 1 slideFromBottom;
-}
-
-label {
-    animation: 2s ease-out 0s 1 slideFromBottom;
+    animation: 600ms ease-out 0s 1 slideFromBottom;
 }
 
 .contact-field {
-    animation: 2s ease-out 0s 1 slideFromBottom;
+    animation: 1s ease-out 0s 1 slideFromBottom;
 }
 
 #name {
-    animation: 1.4s ease-out 0s 1 pulse;
+    animation: 1s ease-out 0s 1 pulse;
 }
 
 h1 {

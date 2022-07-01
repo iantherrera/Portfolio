@@ -1,6 +1,6 @@
 main {
     display: grid;
-    grid-template-columns: .8fr .8fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
         "headshot headshot"
