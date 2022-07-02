@@ -39,7 +39,7 @@ header {
     min-height: 1em;
 }
 
-#name-container {
+#nameContainer {
     display: flex;
     flex-grow: 1;
     flex-wrap: nowrap;
@@ -237,11 +237,11 @@ footer {
         font-size: 1.5em;
     }
 
-    #hamburger-menu {
+    #hamburgerMenu {
         display: none;
     }
 
-    #name-container {
+    #nameContainer {
         margin: 1em;
         flex-grow: 1;
     }

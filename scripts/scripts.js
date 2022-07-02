@@ -1,6 +1,6 @@
 // Hamburger menu
 // Reference hamburger menu icon
-const hamburger = document.getElementById('hamburger-menu');
+const hamburger = document.getElementById('hamburgerMenu');
 // Reference nav elements
 const navMenu = document.getElementsByTagName('nav')[0];
 

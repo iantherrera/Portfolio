@@ -1,4 +1,4 @@
-#hamburger-menu {
+#hamburgerMenu {
     width: 40px;
     height: 40px;
     margin: 20px 10px 20px 20px;
@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 
-#hamburger-menu span {
+#hamburgerMenu span {
     display: block;
     position: absolute;
     height: 7px;
@@ -20,34 +20,34 @@
     transition: .25s ease-in-out;
 }
 
-#hamburger-menu span:nth-child(1) {
+#hamburgerMenu span:nth-child(1) {
     top: 2px;
 }
 
-#hamburger-menu span:nth-child(2),
-#hamburger-menu span:nth-child(3) {
+#hamburgerMenu span:nth-child(2),
+#hamburgerMenu span:nth-child(3) {
     top: 16px;
 }
 
-#hamburger-menu span:nth-child(4) {
+#hamburgerMenu span:nth-child(4) {
     top: 30px;
 }
 
-#hamburger-menu.open span:nth-child(1) {
+#hamburgerMenu.open span:nth-child(1) {
     top: 18px;
     width: 0%;
     left: 50%;
 }
 
-#hamburger-menu.open span:nth-child(2) {
+#hamburgerMenu.open span:nth-child(2) {
     transform: rotate(45deg);
 }
 
-#hamburger-menu.open span:nth-child(3) {
+#hamburgerMenu.open span:nth-child(3) {
     transform: rotate(-45deg);
 }
 
-#hamburger-menu.open span:nth-child(4) {
+#hamburgerMenu.open span:nth-child(4) {
     top: 18px;
     width: 0%;
     left: 50%;
