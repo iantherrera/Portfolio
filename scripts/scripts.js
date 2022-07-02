@@ -25,26 +25,19 @@ window.addEventListener('resize', () => {
     hamburger.classList.remove('open');
   }
 });
-//Hamburger menu
 
 
-//Scrollbar hidden during animations
+//Scrollbar hidden during animations //
 // Reference section elements
 const section = document.getElementsByTagName('section')[0];
 
-// Add scrollbar if needed after animations
+// Add scrollbar if needed after animations //
 section.addEventListener('animationend', () => {
   document.body.style.overflowY = "auto";
 });
-//Scrollbar visibility
-
-//Footer
-// Add year to copyright in footer
-document.querySelector('#year').innerText = new Date().getFullYear();
-//Footer
 
 
-// Lightbox modals
+// // Lightbox modals // //
 // Modal reference
 var modal = document.getElementById('myModal');
 // Reference images by class
@@ -81,4 +74,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-// Modal close functionality //
