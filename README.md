@@ -1,5 +1,5 @@
 # Portfolio
-### Website Capstone Project for CODE Louisville & personal professional portfolio page
+Website Capstone Project for CODE Louisville & personal professional portfolio page
 *by Ian Herrera*
 
 [Portfolio Website](https://iantherrera.github.io/Portfolio/)
