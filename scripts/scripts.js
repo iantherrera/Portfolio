@@ -33,38 +33,3 @@ const section = document.getElementsByTagName('section')[0];
 section.addEventListener('animationend', () => {
   document.body.style.overflowY = "auto";
 });
-
-
-// Lightbox modals
-// Initialize modal elements as variables
-var modal = document.getElementById('myModal');
-var images = document.getElementsByClassName('myImages');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-
-// Loop through gallery images
-// Add click event listener to activate modal
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  img.onclick = function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
-
-// Close modal by clicking on close graphic element
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-//Close modal by clicking anywhere in modal box outside of image
-var modalBox = document.getElementsByClassName('modal')[0]
-
-window.onclick = function(event) {
-  if (event.target == modalBox) {
-    modal.style.display = "none";
-  }
-}

@@ -1,6 +1,6 @@
 // Design gallery array of images and attributes
 var images = [
-    {   
+    {
         src: "../Portfolio/images/design/decca_flyer_2015.jpg",
         class: "myImages",
         id: "myImg",
@@ -20,7 +20,7 @@ var images = [
         alt: "Short Film Festival Poster - 2015"
     },
 
-    {   
+    {
         src: "../Portfolio/images/design/wesfest_poster_2015.jpg",
         class: "myImages",
         id: "myImg",
@@ -34,7 +34,7 @@ var images = [
         alt: "Multimedia Festival Event Poster - 2016"
     },
 
-    {   
+    {
         src: "../Portfolio/images/design/wesfest_subpromo_2016.jpg",
         class: "myImages",
         id: "myImg",
@@ -48,7 +48,7 @@ var images = [
         alt: "Multimedia Festival Event Poster - 2016"
     },
 
-    {   
+    {
         src: "../Portfolio/images/design/reconstruction_logo.jpg",
         class: "myImages",
         id: "myImg",
@@ -62,7 +62,7 @@ var images = [
         alt: "Experimental Poster"
     },
 
-    {   
+    {
         src: "../Portfolio/images/design/setmefree_poster_2017.jpg",
         class: "myImages",
         id: "myImg",
@@ -83,7 +83,7 @@ var images = [
         alt: "Two-page Event Promotional Print Ad - 2018"
     },
 
-    {   
+    {
         src: "../Portfolio/images/design/chewie_forceyall_tshirt.jpg",
         class: "myImages",
         id: "myImg",
@@ -92,25 +92,63 @@ var images = [
 ];
 
 
-// Create div for each design image in images array
-        var tempDiv;
-        
-        for(var i = 0; i < images.length; i++) {
-            parent = document.getElementById('design');
-            tempDiv = document.createElement('div');
-            tempDiv.className = "imageContainer";
-            design.appendChild(tempDiv);
-        };
-        
-// Create img element for each div and set attributes for each img
-        var img;
+// Create image container for each image in images array
+// Add image container to design container
+for (var i = 0; i < images.length; i++) {
+    parent = document.getElementById('design');
+    var tempDiv = document.createElement('div');
+    tempDiv.className = "imageContainer";
+    design.appendChild(tempDiv);
 
-        for(var i = 0; i < images.length; i++) {
-            parent = document.getElementsByClassName('imageContainer')[i];
-            img = document.createElement("img");
-            img.src = images[i].src;
-            img.alt = images[i].alt;
-            img.classList.add(images[i].class);
-            img.id = images[i].id;
-            parent.appendChild(img);
-        };
+    // Create anchor container for each image
+    var imgAnchor = document.createElement("a")
+    imgAnchor.href = images[i].src;
+    imgAnchor.className = "imgAnchor";
+    imgAnchor.src = images[i].src;
+    imgAnchor.alt = images[i].alt;
+    tempDiv.appendChild(imgAnchor);
+
+    // Embed image from gallery inside anchor container
+    var img = document.createElement("img");
+    img.src = images[i].src;
+    img.alt = images[i].alt;
+    img.classList.add(images[i].class);
+    img.id = images[i].id;
+    imgAnchor.appendChild(img);
+};
+
+
+// Lightbox modals
+// Initialize modal elements as variables
+var modal = document.getElementById('myModal');
+var imgAnchor = document.getElementsByClassName('imgAnchor');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// Loop through anchor containers
+// Add click event listener to anchor container to activate modal
+for (var i = 0; i < imgAnchor.length; i++) {
+    var img = imgAnchor[i];
+    img.onclick = function () {
+        event.preventDefault();
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+}
+
+// Close modal by clicking on close graphic element
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+//Close modal by clicking anywhere in modal box outside of image
+var modalBox = document.getElementsByClassName('modal')[0]
+
+window.onclick = function (event) {
+    if (event.target == modalBox) {
+        modal.style.display = "none";
+    }
+}
