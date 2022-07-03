@@ -1,11 +1,8 @@
+/* Element layout display properties */
 main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-nav>ul>:nth-child(2)>a {
-    border-bottom: solid rgb(104, 197, 227);
 }
 
 ul {
@@ -15,28 +12,21 @@ ul {
     justify-content: space-around;
 }
 
-.bubble-frame ul {
+.bubbleFrame ul {
     list-style-type: none;
 }
 
-#skill-list ul li {
+#skillList ul li {
     padding: .7em;
 }
 
-.imageContainer {
-    background-color: rgba(202, 240, 248, .5);
-    margin: 1em;
-    padding: .5em;
-    border-radius: 5px;
-    flex: 0 0 auto;
+#coding a {
+    color: rgb(0, 119, 182);
+    font-weight: 600;
+    text-decoration: none;
 }
 
-.imageContainer:hover {
-    transform: scale(1.2);
-    transition: all ease-out 300ms;
-}
-
-#git-link {
+#gitLink {
     font-size: large;
     display: inline-block;
 }
@@ -51,4 +41,33 @@ ul {
     padding: 1em;
     overflow-x: auto;
     background-color: rgba(104, 197, 227, .4);
+}
+
+.imageContainer {
+    background-color: rgba(202, 240, 248, .5);
+    margin: 1em;
+    padding: .5em;
+    border-radius: 5px;
+    flex: 0 0 auto;
+}
+
+
+/* Active page link style */
+nav>ul>:nth-child(2)>a {
+    border-bottom: solid rgb(104, 197, 227);
+}
+
+
+/* Link hover & visited properties */
+#coding a:visited {
+    color: rgb(13, 27, 53);
+}
+
+#coding a:hover {
+    color: rgb(251, 133, 0);
+}
+
+.imageContainer:hover {
+    transform: scale(1.2);
+    transition: all ease-out 300ms;
 }

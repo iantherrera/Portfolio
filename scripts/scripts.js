@@ -1,7 +1,6 @@
 // Hamburger menu
-// Reference hamburger menu icon
+// Initialize Hamburger menu elements as variables
 const hamburger = document.getElementById('hamburgerMenu');
-// Reference nav elements
 const navMenu = document.getElementsByTagName('nav')[0];
 
 // Hamburger menu click triggers nav height resize & applies nav styles & transformation animations
@@ -27,30 +26,26 @@ window.addEventListener('resize', () => {
 });
 
 
-//Scrollbar hidden during animations //
-// Reference section elements
+// Scrollbar hidden during animations
+// Add scrollbar if needed after animations //
 const section = document.getElementsByTagName('section')[0];
 
-// Add scrollbar if needed after animations //
 section.addEventListener('animationend', () => {
   document.body.style.overflowY = "auto";
 });
 
 
-// // Lightbox modals // //
-// Modal reference
+// Lightbox modals
+// Initialize modal elements as variables
 var modal = document.getElementById('myModal');
-// Reference images by class
 var images = document.getElementsByClassName('myImages');
-// Reference image in modal
 var modalImg = document.getElementById("img01");
-// Reference modal caption
 var captionText = document.getElementById("caption");
 
-// Loop through class images
+// Loop through gallery images
+// Add click event listener to activate modal
 for (var i = 0; i < images.length; i++) {
   var img = images[i];
-  // Add click listener for image
   img.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -58,8 +53,7 @@ for (var i = 0; i < images.length; i++) {
   }
 }
 
-// Modal close functionality //
-// Close modal by clicking on close span
+// Close modal by clicking on close graphic element
 var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() {

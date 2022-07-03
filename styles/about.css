@@ -1,3 +1,4 @@
+/* Element layout display properties */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,11 +10,7 @@ main {
     align-self: center;
 }
 
-nav>ul>:first-child>a {
-    border-bottom: solid rgb(104, 197, 227);
-}
-
-#headshot-container {
+#headshotContainer {
     grid-area: headshot;
     align-self: center;
     padding: 10%;
@@ -34,6 +31,14 @@ nav>ul>:first-child>a {
     grid-area: experience;
 }
 
+
+/* Active page link style */
+nav>ul>:first-child>a {
+    border-bottom: solid rgb(104, 197, 227);
+}
+
+
+/* Media queries & breakpoints */
 @media screen and (min-width: 600px) {
 
     main {
@@ -58,7 +63,7 @@ nav>ul>:first-child>a {
             "headshot experience";
     }
 
-    #headshot-container {
+    #headshotContainer {
         align-self: center;
     }
 }

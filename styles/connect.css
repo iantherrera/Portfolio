@@ -1,25 +1,22 @@
-nav>ul>:nth-child(3)>a {
-    border-bottom: solid rgb(104, 197, 227)
-}
-
-#connect-container {
+/* Element layout display properties */
+#connectContainer {
     flex-grow: 1;
     max-width: 600px;
     margin: auto;
 }
 
-#form-container {
+#formContainer {
     flex-direction: column;
     flex-grow: 1;
     align-self: center;
     max-width: fit-content;
 }
 
-#connect-form {
+#connectForm {
     padding: 0 3em;
 }
 
-.contact-field label {
+.contactField label {
     display: block;
     padding-top: .75em;
     padding-bottom: .2em;
@@ -38,9 +35,15 @@ nav>ul>:nth-child(3)>a {
     resize: none;
 }
 
-.contact-field input[type="submit"] {
+.contactField input[type="submit"] {
     margin: 1em 0 .5em 0;
     padding: .75em;
     font-weight: 600;
     font-size: 1em;
+}
+
+
+/* Active page link style */
+nav>ul>:nth-child(3)>a {
+    border-bottom: solid rgb(104, 197, 227)
 }

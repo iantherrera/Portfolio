@@ -1,3 +1,4 @@
+/* Hamburger menu display properties and transformation animation properties */
 #hamburgerMenu {
     width: 40px;
     height: 40px;
@@ -20,6 +21,8 @@
     transition: .25s ease-in-out;
 }
 
+
+/* Default closed Hamburger menu display properties */
 #hamburgerMenu span:nth-child(1) {
     top: 2px;
 }
@@ -33,6 +36,8 @@
     top: 30px;
 }
 
+
+/* Open Hamburger menu display properties */
 #hamburgerMenu.open span:nth-child(1) {
     top: 18px;
     width: 0%;
