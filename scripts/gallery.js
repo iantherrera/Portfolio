@@ -144,7 +144,14 @@ span.onclick = function () {
     modal.style.display = "none";
 }
 
-//Close modal by clicking anywhere in modal box outside of image
+// Close modal with escape key
+document.addEventListener('keydown', function (event) {
+    if (event.key === "Escape") {
+        modal.style.display = "none";
+    }
+});
+
+// Close modal by clicking anywhere in modal box outside of image
 var modalBox = document.getElementsByClassName('modal')[0]
 
 window.onclick = function (event) {
