@@ -8,20 +8,20 @@
 
 # Project Overview:
 
-## Responsive portfolio website will consist of 3 pages: 
+Responsive portfolio website will consist of 3 pages: 
 
-- ### “About” page contents:
+- “About” page contents:
   - Headshot photo
   - Biographical information
   - Experience information
 
-- ### “Portfolio” page contents:
+- “Portfolio” page contents:
   - Skillset information
   - Software & language proficiencies
   - Link to GitHub for future & current coding projects
   - Design portfolio
 
-- ### “Connect” page contents:
+- “Connect” page contents:
   - Fields for collecting
     - Name
     - Email
