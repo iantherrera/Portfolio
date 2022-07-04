@@ -4,7 +4,7 @@
 // Create header element
 // Set id for header & add to body  
 const head = document.createElement("HEADER");
- 
+
 head.setAttribute("id", "myHeader");
 document.body.prepend(head);
 
@@ -19,11 +19,11 @@ document.getElementById("myHeader").appendChild(hamContainer);
 for (var i = 0; i < 4; i++) {
     var hamSpan = document.createElement("SPAN");
     document.getElementById("hamburgerMenu").appendChild(hamSpan);
-};
+}
 
 
 // Create name in header
-// Create div to contain name container, set id attribute & add to header
+// Create name container, set id attribute & add to header
 const nameContainer = document.createElement("div");
 nameContainer.setAttribute("id", "nameContainer");
 document.getElementById("myHeader").appendChild(nameContainer);
@@ -56,7 +56,7 @@ document.getElementById("nav").appendChild(listContainer);
 for (var i = 0; i < 3; i++) {
     var navListItem = document.createElement("li");
     document.getElementById("navList").appendChild(navListItem);
-};
+}
 
 // Add anchor element to each list element
 var listItemContainers = document.getElementById("navList").childNodes;
@@ -64,7 +64,7 @@ for (var i = 0; i < listItemContainers.length; i++) {
     var navAnchor = document.createElement("a");
     navAnchor.setAttribute("class", "navLinks");
     listItemContainers[i].appendChild(navAnchor);
-};
+}
 
 // Add href & content to each anchor for Page links
 var navLinks = document.querySelectorAll(".navLinks");

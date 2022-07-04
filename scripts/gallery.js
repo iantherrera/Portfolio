@@ -115,7 +115,7 @@ for (var i = 0; i < images.length; i++) {
     img.classList.add(images[i].class);
     img.id = images[i].id;
     imgAnchor.appendChild(img);
-};
+}
 
 
 // Lightbox modals

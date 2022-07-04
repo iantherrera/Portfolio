@@ -17,4 +17,4 @@ document.getElementById("myFooter").appendChild(footContainer);
 footContainer.setAttribute("id", "footContainer");
 
 // Insert html into footer contents container
-document.getElementById("footContainer").innerHTML = "&copy; Copyright " + currentYear +" Ian Herrera"
+document.getElementById("footContainer").innerHTML = "&copy; Copyright " + currentYear + " Ian Herrera";
