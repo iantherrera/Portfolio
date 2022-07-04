@@ -24,7 +24,8 @@
 }
 
 #nameInput,
-#email {
+#email,
+#subject {
     width: 90%;
     min-height: 1.75rem;
 }

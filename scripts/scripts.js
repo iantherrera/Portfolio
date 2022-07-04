@@ -7,7 +7,7 @@ const navMenu = document.getElementsByTagName('nav')[0];
 hamburger.addEventListener('click', () => {
   if (navMenu.style.height == 0 || navMenu.style.height == '0px') {
     hamburger.classList.add("open");
-    navMenu.style.height = '145px';
+    navMenu.style.height = '135px';
   } else {
     hamburger.classList.remove('open');
     navMenu.style.height = 0;
