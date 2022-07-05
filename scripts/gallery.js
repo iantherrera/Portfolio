@@ -1,5 +1,5 @@
 // Design gallery array of images and attributes
-var images = [
+let images = [
     {
         src: "../Portfolio/images/design/decca_flyer_2015.jpg",
         class: "myImages",
@@ -94,14 +94,14 @@ var images = [
 
 // Create image container for each image in images array
 // Add image container to design container
-for (var i = 0; i < images.length; i++) {
+for (let i = 0; i < images.length; i++) {
     parent = document.getElementById('design');
-    var tempDiv = document.createElement('div');
+    let tempDiv = document.createElement('div');
     tempDiv.className = "imageContainer";
     design.appendChild(tempDiv);
 
     // Create anchor container for each image
-    var imgAnchor = document.createElement("a")
+    let imgAnchor = document.createElement("a")
     imgAnchor.href = images[i].src;
     imgAnchor.className = "imgAnchor";
     imgAnchor.src = images[i].src;
@@ -109,7 +109,7 @@ for (var i = 0; i < images.length; i++) {
     tempDiv.appendChild(imgAnchor);
 
     // Embed image from gallery inside anchor container
-    var img = document.createElement("img");
+    let img = document.createElement("img");
     img.src = images[i].src;
     img.alt = images[i].alt;
     img.classList.add(images[i].class);
@@ -120,15 +120,15 @@ for (var i = 0; i < images.length; i++) {
 
 // Lightbox modals
 // Initialize modal elements as variables
-var modal = document.getElementById('myModal');
-var imgAnchor = document.getElementsByClassName('imgAnchor');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
+let modal = document.getElementById('myModal');
+let imgAnchor = document.getElementsByClassName('imgAnchor');
+let modalImg = document.getElementById("img01");
+let captionText = document.getElementById("caption");
 
 // Loop through anchor containers
 // Add click event listener to anchor container to activate modal
-for (var i = 0; i < imgAnchor.length; i++) {
-    var img = imgAnchor[i];
+for (let i = 0; i < imgAnchor.length; i++) {
+    let img = imgAnchor[i];
     img.onclick = function () {
         event.preventDefault();
         modal.style.display = "block";
@@ -138,7 +138,7 @@ for (var i = 0; i < imgAnchor.length; i++) {
 }
 
 // Close modal by clicking on close graphic element
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 span.onclick = function () {
     modal.style.display = "none";
@@ -152,7 +152,7 @@ document.addEventListener('keydown', function (event) {
 });
 
 // Close modal by clicking anywhere in modal box outside of image
-var modalBox = document.getElementsByClassName('modal')[0]
+let modalBox = document.getElementsByClassName('modal')[0]
 
 window.onclick = function (event) {
     if (event.target == modalBox) {
