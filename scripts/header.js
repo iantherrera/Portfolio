@@ -66,11 +66,34 @@ for (let i = 0; i < listItemContainers.length; i++) {
     listItemContainers[i].appendChild(navAnchor);
 }
 
-// Add href & content to each anchor for Page links
-let navLinks = document.querySelectorAll(".navLinks");
-navLinks[0].href = "index.html";
-navLinks[0].innerHTML = "About";
-navLinks[1].href = "portfolio.html";
-navLinks[1].innerHTML = "Portfolio";
-navLinks[2].href = "connect.html";
-navLinks[2].innerHTML = "Connect";
+
+// Create Nav links
+// Array of Nav links & attributes
+const navLinkContents = [
+    {
+        href: "index.html",
+        innerHTML: "About"
+    },
+
+    {
+        href: "portfolio.html",
+        innerHTML: "Portfolio"
+    },
+
+    {
+        href: "connect.html",
+        innerHTML: "Connect"
+    }
+];
+
+// Function to add attributes & content to Nav link anchor tags
+let setNavLink = (linkArray) => {
+    let navLinks = document.querySelectorAll(".navLinks");
+    linkArray.forEach((element, index) => {
+        navLinks[index].href = element.href;
+        navLinks[index].innerHTML = element.innerHTML;
+    });
+};
+
+// Call on function to generate Nav Menu links
+setNavLink(navLinkContents);
