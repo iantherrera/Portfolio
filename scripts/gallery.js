@@ -129,7 +129,7 @@ let captionText = document.getElementById("caption");
 // Add click event listener to anchor container to activate modal
 for (let i = 0; i < imgAnchor.length; i++) {
     let img = imgAnchor[i];
-    img.onclick = function () {
+    img.onclick = function (event) {
         event.preventDefault();
         modal.style.display = "block";
         modalImg.src = this.src;
