@@ -1,4 +1,4 @@
-// Hamburger menu
+// Hamburger menu //
 // Initialize Hamburger menu elements as variables
 const hamburger = document.getElementById('hamburgerMenu');
 const navMenu = document.getElementsByTagName('nav')[0];
@@ -26,7 +26,7 @@ window.addEventListener('resize', () => {
 });
 
 
-// Scrollbar hidden during animations
+// Scrollbar hidden during animations //
 // Add scrollbar if needed after animations //
 const section = document.getElementsByTagName('section')[0];
 

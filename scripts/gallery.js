@@ -1,5 +1,5 @@
 // Design gallery array of images and attributes
-let images = [
+const images = [
     {
         src: "../Portfolio/images/design/decca_flyer_2015.jpg",
         class: "myImages",
@@ -118,10 +118,10 @@ for (let i = 0; i < images.length; i++) {
 }
 
 
-// Lightbox modals
+// Lightbox modals //
 // Initialize modal elements as variables
-let modal = document.getElementById('myModal');
-let imgAnchor = document.getElementsByClassName('imgAnchor');
+const modal = document.getElementById('myModal');
+const imgAnchor = document.getElementsByClassName('imgAnchor');
 let modalImg = document.getElementById("img01");
 let captionText = document.getElementById("caption");
 
@@ -137,22 +137,22 @@ for (let i = 0; i < imgAnchor.length; i++) {
     }
 }
 
-// Close modal by clicking on close graphic element
-let span = document.getElementsByClassName("close")[0];
+// Close modal by clicking on close graphic element //
+const span = document.getElementsByClassName("close")[0];
 
 span.onclick = function () {
     modal.style.display = "none";
 }
 
-// Close modal with escape key
+// Close modal with escape key //
 document.addEventListener('keydown', function (event) {
     if (event.key === "Escape") {
         modal.style.display = "none";
     }
 });
 
-// Close modal by clicking anywhere in modal box outside of image
-let modalBox = document.getElementsByClassName('modal')[0]
+// Close modal by clicking anywhere in modal box outside of image //
+const modalBox = document.getElementsByClassName('modal')[0]
 
 window.onclick = function (event) {
     if (event.target == modalBox) {
