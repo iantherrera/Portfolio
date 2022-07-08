@@ -87,7 +87,7 @@ const images = [
         src: "../Portfolio/images/design/chewie_forceyall_tshirt.jpg",
         class: "myImages",
         id: "myImg",
-        alt: "Short Film Festival Poster - 2015"
+        alt: "T-Shirt Design"
     }
 ];
 
@@ -102,7 +102,7 @@ for (let i = 0; i < images.length; i++) {
 
     // Create anchor container for each image
     let imgAnchor = document.createElement("a")
-    imgAnchor.href = images[i].src;
+    imgAnchor.href = "#void";
     imgAnchor.className = "imgAnchor";
     imgAnchor.src = images[i].src;
     imgAnchor.alt = images[i].alt;

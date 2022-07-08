@@ -38,6 +38,7 @@ ul {
     max-width: 600px;
     align-items: center;
     animation: none;
+    gap: 1em;
     padding: 1em;
     overflow-x: auto;
     background-color: rgba(104, 197, 227, .4);
@@ -46,7 +47,7 @@ ul {
 .imageContainer {
     background-color: rgba(202, 240, 248, .5);
     margin: 1em;
-    padding: .5em;
+    padding: 1em;
     border-radius: 5px;
     flex: 0 0 auto;
 }
