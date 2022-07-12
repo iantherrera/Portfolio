@@ -123,7 +123,7 @@ footer {
 .textSection {
     overflow-y: scroll;
     scrollbar-color: rgb(13, 27, 53) rgb(104, 197, 227);
-    scrollbar-width: thin;
+    scrollbar-width: medium;
 }
 
 .textSection::-webkit-scrollbar {
@@ -132,11 +132,11 @@ footer {
 
 .textSection::-webkit-scrollbar-thumb {
     height: .5em;
-    background: rgb(36, 138, 172);
+    background: rgb(22, 93, 117);
 }
 
 .textSection::-webkit-scrollbar {
-    background-color: rgb(104, 197, 227)
+    background-color: rgba(202, 240, 248, .7);
 }
 
 
@@ -201,6 +201,7 @@ p:first-child {
 
 .title {
     color: #caf0f8ff;
+    top: 0;
 }
 
 #name {
