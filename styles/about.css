@@ -48,7 +48,6 @@ nav>ul>:first-child>a {
             "headshot about "
             "headshot about"
             "experience experience";
-        margin: 1em;
     }
 
 }
@@ -74,6 +73,5 @@ nav>ul>:first-child>a {
         grid-template-columns: .8fr 1fr 1fr;
         grid-template-areas:
             "headshot about experience";
-        margin: 1em auto 0;
     }
 }

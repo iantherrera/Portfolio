@@ -127,7 +127,7 @@ footer {
 /* Custom scrollbars for text sections */
 .textContainer {
     overflow-y: scroll;
-    scrollbar-color: rgb(13, 27, 53) rgb(104, 197, 227);
+    scrollbar-color: rgbrgb(22, 93, 117) rgba(202, 240, 248, .7);
     scrollbar-width: medium;
 }
 

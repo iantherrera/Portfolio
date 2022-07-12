@@ -16,6 +16,10 @@ ul {
     list-style-type: none;
 }
 
+#skillsetTitle {
+    margin-bottom: 0;
+}
+
 #skillList ul li {
     font-size: 1.2em;
     padding: .7em;
@@ -42,7 +46,7 @@ ul {
     gap: 1em;
     padding: 1em;
     overflow-x: scroll;
-    background-color: rgba(104, 197, 227, .4);
+    background-color: rgba(202, 240, 248, .4)
 }
 
 #design::-webkit-scrollbar {
@@ -59,7 +63,7 @@ ul {
 }
 
 .imageContainer {
-    background-color: rgba(202, 240, 248, .5);
+    background-color: rgba(202, 240, 248, .7);
     margin: 1em;
     padding: 1em;
     border-radius: 5px;
