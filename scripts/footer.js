@@ -6,8 +6,8 @@ const foot = document.createElement("FOOTER");
 foot.setAttribute("id", "myFooter");
 document.body.appendChild(foot);
 
-// Create h4 to contain footer contents & add to footer element
-const footContainer = document.createElement("h4");
+// Create h3 to contain footer contents & add to footer element
+const footContainer = document.createElement("h3");
 document.getElementById("myFooter").appendChild(footContainer);
 
 // Set id for footer contents container

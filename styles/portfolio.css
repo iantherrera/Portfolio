@@ -36,13 +36,26 @@ ul {
     flex-grow: 1;
     flex-wrap: nowrap;
     width: 90%;
-    max-width: 600px;
+    max-width: 800px;
     align-items: center;
     animation: none;
     gap: 1em;
     padding: 1em;
-    overflow-x: auto;
+    overflow-x: scroll;
     background-color: rgba(104, 197, 227, .4);
+}
+
+#design::-webkit-scrollbar {
+    height: .7em;
+}
+
+#design::-webkit-scrollbar-thumb {
+    height: .5em;
+    background: rgb(22, 93, 117);
+}
+
+#design::-webkit-scrollbar {
+    background-color: rgba(202, 240, 248, .7);
 }
 
 .imageContainer {
