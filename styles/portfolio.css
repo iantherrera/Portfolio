@@ -16,13 +16,13 @@ ul {
     list-style-type: none;
 }
 
-#skillsetTitle {
-    margin-bottom: 0;
-}
-
 #skillList ul li {
     font-size: 1.2em;
     padding: .7em;
+}
+
+#codingTitle {
+    margin-bottom: 0;
 }
 
 #coding a {
@@ -45,8 +45,15 @@ ul {
     animation: none;
     gap: 1em;
     padding: 1em;
-    overflow-x: scroll;
     background-color: rgba(202, 240, 248, .4)
+}
+
+/* Custom scrollbars for text sections */
+/* Custom scrollbar for Firefox */
+#design {
+    overflow-x: scroll;
+    scrollbar-color: rgb(22, 93, 117) rgba(202, 240, 248, .7);
+    scrollbar-width: thin;
 }
 
 #design::-webkit-scrollbar {
