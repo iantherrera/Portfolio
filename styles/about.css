@@ -18,7 +18,7 @@ main {
 }
 
 #headshot {
-    width: 80%;
+    width: 100%;
     margin: auto;
     border-radius: 20px;
 }
@@ -55,7 +55,7 @@ nav>ul>:first-child>a {
 @media screen and (min-width: 768px) {
 
     main {
-        grid-template-columns: 1fr 1.2fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
             "headshot about "
@@ -70,7 +70,7 @@ nav>ul>:first-child>a {
 @media screen and (min-width: 1024px) {
 
     main {
-        grid-template-columns: .8fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             "headshot about experience";
     }
