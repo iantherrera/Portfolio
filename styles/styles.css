@@ -192,15 +192,20 @@ h3 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
-    color: #000000;
+    color: rgb(13, 27, 53);
     background-color: rgba(202, 240, 248, .7);
     line-height: 1.5em;
     text-align: center;
     margin-top: 2em;
     padding: .5em .75em;
     border-radius: 20px;
+}
+
+strong {
+    font-weight: bolder;
+    font-style: italic;
 }
 
 p:first-child {
@@ -229,6 +234,11 @@ nav a:hover {
     border-bottom: solid rgb(104, 197, 227);
 }
 
+strong:hover {
+    color: #caf0f8ff;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+}
 
 /* Keyframes & Animations */
 @keyframes slideFromBottom {

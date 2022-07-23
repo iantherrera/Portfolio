@@ -31,9 +31,15 @@ ul {
     text-decoration: none;
 }
 
-#gitLink {
-    font-size: large;
+.gitLink {
+
+    font-weight: 700;
     display: inline-block;
+
+}
+
+#coding>.gitLink {
+    padding: .6em .4em .4em .4em;
 }
 
 #design {
@@ -89,8 +95,9 @@ nav>ul>:nth-child(2)>a {
     color: rgb(13, 27, 53);
 }
 
-#coding a:hover {
-    color: rgb(251, 133, 0);
+.gitLink:hover,
+.gitLink.bubbleFrame:hover {
+    color: rgb(240, 102, 11);
 }
 
 .imageContainer:hover {
