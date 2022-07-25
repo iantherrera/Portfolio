@@ -43,7 +43,6 @@ A majority of possible project requirements were met. As content progressed, I w
 - Create your own original CSS animation
 
 ## JAVASCRIPT FEATURES INCLUDED:
-- Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction with JavaScript code.
 - Create and populate a JavaScript array with one or more values and display the contents of some or all of the array on your page.
 - Create a Javascript loop that dynamically displays HTML on your page.
 - Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page.
