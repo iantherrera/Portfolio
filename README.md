@@ -34,7 +34,7 @@ Responsive portfolio website will consist of 3 pages:
 
 A majority of possible project requirements were met. As content progressed, I was able to incorporate more criteria, while increasing the scope of this project.
 
-- The minimum of 2 media queries was exceeded by this project, utilizing both Flexbox & Grid. Site was designed with "mobile first" principles, and it's design dynamically reflects these principles as media sizes change.
+- The project minimum of 2 media queries was exceeded by this site, utilizing both Flexbox & Grid. Site was designed with "mobile first" principles, and it's design dynamically reflects these principles as media sizes change.
 
 ## CSS FEATURES INCLUDED:
 - A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon
