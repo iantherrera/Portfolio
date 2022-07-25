@@ -32,6 +32,8 @@ Responsive portfolio website will consist of 3 pages:
 
 # Capstone Project Requirement Goals:
 
+A majority of possible project requirements were met. As content progressed, I was able to incorporate more criteria, while increasing the scope of this project.
+
 ## CSS FEATURES INCLUDED:
 - A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon
 - Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views. 
