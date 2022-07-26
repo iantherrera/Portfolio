@@ -7,14 +7,13 @@
 }
 
 #formContainer {
-
     flex-grow: 1;
     align-self: center;
     max-width: fit-content;
 }
 
 .connectForm {
-    padding: 0 1em;
+    padding: 0;
     align-items: center;
 }
 
@@ -36,9 +35,15 @@
 }
 
 #input_9 {
-    width: 100%;
+    width: 80%;
     height: 10rem;
     resize: none;
+}
+
+#cid_10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-error-message {
