@@ -73,14 +73,14 @@ header {
     flex-wrap: wrap;
     width: 100%;
     min-height: 1em;
-    background-color: rgb(13, 27, 53, .5);
+    background-color: rgba(13, 27, 53, .5);
     color: #caf0f8ff;
 }
 
 footer {
     width: 100%;
     color: #caf0f8ff;
-    background-color: rgb(13, 27, 53, .5);
+    background-color: rgba(13, 27, 53, .5);
     text-align: center;
     padding: .5em;
     position: relative;
@@ -124,6 +124,10 @@ footer {
     align-self: center;
 }
 
+p:first-child {
+    margin-top: 0;
+}
+
 
 /* Nav menu display properties */
 nav {
@@ -145,6 +149,10 @@ nav ul {
     flex-direction: column;
     align-items: center;
     list-style-type: none;
+}
+
+nav li {
+    padding: 0.5em;
 }
 
 
@@ -171,12 +179,7 @@ nav ul {
 }
 
 
-nav li {
-    padding: 0.5em;
-}
-
-
-/* Text & Color properties */
+/* Text Sizing & Color properties */
 * {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -208,10 +211,6 @@ strong {
     font-style: italic;
 }
 
-p:first-child {
-    margin-top: 0;
-}
-
 .title {
     color: #caf0f8ff;
     top: 0;
@@ -239,6 +238,7 @@ strong:hover {
     cursor: pointer;
     transition: all 250ms ease-in;
 }
+
 
 /* Keyframes & Animations */
 @keyframes slideFromBottom {
