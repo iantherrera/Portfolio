@@ -9,7 +9,9 @@
 #formContainer {
     flex-grow: 1;
     align-self: center;
-    max-width: fit-content;
+    justify-content: center;
+    min-width: fit-content;
+    width: 80%;
 }
 
 .connectForm {
@@ -50,8 +52,7 @@
 
 .error-navigation-container {
     background-color: rgba(13, 27, 53, .75);
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: .5em;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
 }
@@ -70,6 +71,7 @@
 
 .error-navigation-next-button {
     margin: auto;
+    margin-top: .5em;
     padding: .25em;
 }
 

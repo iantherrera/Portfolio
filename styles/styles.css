@@ -124,13 +124,9 @@ footer {
     align-self: center;
 }
 
-.iconContainer {}
-
 .textIcon {
     height: 80px;
 }
-
-.textIcon {}
 
 p:first-child {
     margin-top: 0;
