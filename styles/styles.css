@@ -124,10 +124,21 @@ footer {
     align-self: center;
 }
 
+.iconContainer {}
+
+.textIcon {
+    height: 80px;
+}
+
+.textIcon {}
+
 p:first-child {
     margin-top: 0;
 }
 
+p:last-child {
+    margin-bottom: 0;
+}
 
 /* Nav menu display properties */
 nav {
@@ -201,7 +212,8 @@ p {
     background-color: rgba(202, 240, 248, .7);
     line-height: 1.5em;
     text-align: center;
-    margin-top: 2em;
+    margin-top: .5em;
+    margin-bottom: 1.5em;
     padding: .5em .75em;
     border-radius: 20px;
 }
