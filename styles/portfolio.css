@@ -49,6 +49,9 @@ ul {
     gap: 1em;
     padding: 1em;
     background-color: rgba(202, 240, 248, .4);
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: unset;
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
 }
