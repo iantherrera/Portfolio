@@ -47,7 +47,9 @@ ul {
     animation: none;
     gap: 1em;
     padding: 1em;
-    background-color: rgba(202, 240, 248, .4)
+    background-color: rgba(202, 240, 248, .4);
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
 }
 
 /* Custom scrollbars for text sections */

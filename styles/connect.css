@@ -46,6 +46,14 @@
     align-items: center;
 }
 
+.error-navigation-container {
+    background-color: rgba(13, 27, 53, .75);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
 .form-error-message {
     margin: auto;
     width: 80%;
@@ -56,6 +64,11 @@
 
 .form-error-message>img {
     max-height: 1em;
+}
+
+.error-navigation-next-button {
+    margin: auto;
+    padding: .25em;
 }
 
 #input_11 {
