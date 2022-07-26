@@ -30,11 +30,13 @@
 #first_6,
 #input_7,
 #input_8 {
+    padding: .25em;
     width: 80%;
     min-height: 1.75rem;
 }
 
 #input_9 {
+    padding: .25em;
     width: 80%;
     height: 10rem;
     resize: none;
