@@ -1,19 +1,19 @@
 /* Element layout display properties */
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-        "headshot headshot"
-        "about about"
-        "experience experience";
+        "headshot"
+        "about"
+        "experience";
     align-self: center;
 }
 
 #headshotContainer {
     grid-area: headshot;
     align-self: center;
-    padding: 7.5%;
+    padding: 2em;
     border-radius: 20px;
 }
 
@@ -42,36 +42,27 @@ nav>ul>:first-child>a {
 @media screen and (min-width: 600px) {
 
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
-            "headshot about "
+            "headshot about"
             "headshot about"
             "experience experience";
     }
 
-}
-
-@media screen and (min-width: 768px) {
-
-    main {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-            "headshot about "
-            "headshot experience";
-    }
-
-    #headshotContainer {
-        align-self: center;
+    .textContainer {
+        max-height: 30vh;
     }
 }
+
 
 @media screen and (min-width: 1024px) {
 
     main {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "headshot about experience";
+        display: flex;
+    }
+
+    .textContainer {
+        max-height: 70vh;
     }
 }

@@ -41,7 +41,7 @@ body {
 
 main {
     width: 90%;
-    max-width: 1000px;
+    max-width: 90vw;
     margin: 1.75em 5%;
     gap: 1.75em;
 }
@@ -100,22 +100,29 @@ footer {
 
 #nameContainer {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     flex-wrap: nowrap;
     align-items: center;
+    justify-items: center;
     justify-content: center;
-    padding-top: .7em;
-    padding-left: .7em;
     transition: font-size 300ms;
 }
 
 #name {
     display: flex;
-    width: 100%;
+    margin: auto;
+    margin-top: .5em;
+}
+
+#subtitle {
+    display: flex;
+    margin-top: .5em;
+    margin-bottom: .75em;
 }
 
 .textSection {
-    max-height: 400px;
+    max-height: 70vh;
 }
 
 .textContainer {
@@ -231,6 +238,11 @@ strong {
     color: #caf0f8ff;
 }
 
+#subtitle {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
 
 /* Link hover & visited properties */
 nav a:visited {
@@ -317,8 +329,7 @@ main>section {
     }
 
     #nameContainer {
-        margin: 2em 0 .25em 0;
-        padding: 0;
+        margin-top: 1em;
     }
 
     #name {
@@ -326,5 +337,17 @@ main>section {
         font-weight: 600;
         justify-content: center;
     }
+}
 
+@media screen and (min-width: 1024px) {
+    .bubbleFrame {
+        display: unset;
+    }
+}
+
+@media screen and (min-height: 1920px) {
+
+    .textContainer {
+        overflow-y: auto;
+    }
 }

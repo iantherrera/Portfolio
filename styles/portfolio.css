@@ -43,8 +43,8 @@ ul {
     flex-grow: 1;
     flex-wrap: nowrap;
     width: 90%;
-    max-width: 800px;
     align-items: center;
+    overflow-x: scroll;
     animation: none;
     gap: 1em;
     padding: 1em;
@@ -56,10 +56,10 @@ ul {
     border-bottom-right-radius: unset;
 }
 
+
 /* Custom scrollbars for text sections */
 /* Custom scrollbar for Firefox */
 #design {
-    overflow-x: scroll;
     scrollbar-color: rgb(22, 93, 117) rgba(202, 240, 248, .7);
     scrollbar-width: thin;
 }
@@ -105,4 +105,47 @@ nav>ul>:nth-child(2)>a {
 .imageContainer:hover {
     transform: scale(1.2);
     transition: all ease-out 300ms;
+}
+
+
+/* Media queries & breakpoints */
+@media screen and (min-width: 1024px) {
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "skillset coding"
+            "skillset skillList"
+            "skillset portfolio";
+    }
+
+    #skillset {
+        grid-area: skillset;
+    }
+
+    #coding {
+        grid-area: coding;
+        align-self: center;
+    }
+
+    #skillList {
+        grid-area: skillList;
+    }
+
+    #portfolio {
+        grid-area: portfolio;
+        max-height: 40vh;
+    }
+
+    #design {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y: scroll;
+        overflow-x: auto;
+        scrollbar-color: rgb(22, 93, 117) rgba(202, 240, 248, .7);
+        scrollbar-width: thin;
+    }
 }

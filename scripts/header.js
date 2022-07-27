@@ -37,6 +37,16 @@ document.getElementById("nameContainer").appendChild(nameContents);
 document.getElementById("name").innerHTML = "IAN HERRERA";
 
 
+// Create subtitle in header
+// Create h2 for subtitle contents, set id attribute & add to name container
+const subtitleContents = document.createElement("h2");
+subtitleContents.setAttribute("id", "subtitle");
+document.getElementById("nameContainer").appendChild(subtitleContents);
+
+// Add contents to h2 container
+document.getElementById("subtitle").innerHTML = "// WEB DEVELOPER //"
+
+
 // Create nav menu
 // Create nav section
 const navContainer = document.createElement("NAV");
