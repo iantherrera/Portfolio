@@ -78,13 +78,13 @@
 #input_11 {
     margin: 1em 0 .5em 0;
     padding: .75em;
+    border-radius: 9px;
+    border: solid 1px rgb(13, 27, 53);
 }
 
 
 /* Text Sizing & Color properties */
 #input_11 {
-    margin: 1em 0 .5em 0;
-    padding: .75em;
     font-weight: 600;
     font-size: 1em;
 }
@@ -92,6 +92,13 @@
 .error-navigation-message {
     font-size: .8em;
     color: #caf0f8ff;
+}
+
+
+/* Button hover properties */
+#input_11:hover {
+    background-color: rgb(104, 197, 227);
+    cursor: pointer;
 }
 
 
@@ -104,4 +111,12 @@ p {
 /* Active page link style */
 nav>ul>:nth-child(3)>a {
     border-bottom: solid rgb(104, 197, 227)
+}
+
+/* Media queries & breakpoints */
+@media screen and (min-width: 1920px) {
+
+    #connectContainer {
+        max-width: 40vw;
+    }
 }

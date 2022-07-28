@@ -149,3 +149,10 @@ nav>ul>:nth-child(2)>a {
         scrollbar-width: thin;
     }
 }
+
+@media screen and (min-width: 1920px) {
+
+    #design {
+        overflow-y: auto;
+    }
+}

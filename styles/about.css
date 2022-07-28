@@ -50,11 +50,17 @@ nav>ul>:first-child>a {
             "experience experience";
     }
 
-    .textContainer {
-        max-height: 30vh;
+    .textSection {
+        max-height: 45vh;
     }
 }
 
+@media screen and (min-width: 600px) and (orientation: landscape) {
+
+    .textSection {
+        max-height: 90vh;
+    }
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -62,7 +68,18 @@ nav>ul>:first-child>a {
         display: flex;
     }
 
-    .textContainer {
+    .textSection {
+        max-width: 28vw;
         max-height: 70vh;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    #headshotContainer {
+        grid-area: headshot;
+        align-self: center;
+        padding: 2.5%;
+        border-radius: 20px;
     }
 }

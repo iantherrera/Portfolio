@@ -82,17 +82,17 @@ for (let i = 0; i < listItemContainers.length; i++) {
 const navLinkContents = [
     {
         href: "index.html",
-        innerHTML: "About"
+        innerHTML: "ABOUT"
     },
 
     {
         href: "portfolio.html",
-        innerHTML: "Portfolio"
+        innerHTML: "PORTFOLIO"
     },
 
     {
         href: "connect.html",
-        innerHTML: "Connect"
+        innerHTML: "CONNECT"
     }
 ];
 
