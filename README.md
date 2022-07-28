@@ -40,7 +40,7 @@ A majority of possible project requirements were met. As content progressed, I w
 - A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon
 - Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views
 - Use “:nth-child” or “nth-of-type” to style a series of elements on your page
-  - Utilized “:nth-child” for transformation of hamburger menu spans and also for first and last paragraphs in text sections
+  - Utilized “:nth-child” for transformation of hamburger menu spans and also for styling first and last paragraphs in text sections
 - Create your own original CSS animation
   - Customized transformation animations for hamburger menu spans and utilized CSS animations for sliding elements into page on loading
 
