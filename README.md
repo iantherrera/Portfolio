@@ -53,4 +53,5 @@ A majority of possible project requirements were met. As content progressed, I w
   - Created multiple variables and objects, assigned attributes or properties as values, and many are visually represented in the display
 - Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction
   - Utilized click and key events to create multiple interactions for hamburger menu and lightbox, both in the gallery and on the modal
+
 NOTE: I attempted to experiment as much as possible with reaching similar results for similar problems with different approaches and methodology.
