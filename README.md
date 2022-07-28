@@ -40,7 +40,7 @@ A majority of possible project requirements were met. As content progressed, I w
 - A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon
 - Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views
 - Use “:nth-child” or “nth-of-type” to style a series of elements on your page
-  - Utilized for manipulation of hamburger menu spans and styling for first and last paragraphs in text sections
+  - Utilized “:nth-child” for transformation of hamburger menu spans and also for first and last paragraphs in text sections
 - Create your own original CSS animation
   - Customized transformation animations for hamburger menu spans and utilized CSS animations for sliding elements into page on loading
 
@@ -48,9 +48,9 @@ A majority of possible project requirements were met. As content progressed, I w
 - Create and populate a JavaScript array with one or more values and display the contents of some or all of the array on your page
   - Utilized an array for populating gallery image container and experimented with generating nav links from an array
 - Create a Javascript loop that dynamically displays HTML on your page
-  - Generated header and footer on every page and generated elements into HTML from arrays with Javasccript
+  - Generated header and footer on every page and generated gallery display of images with loops
 - Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page
-  - Created multiple variables and objects, assigned attributes or properties as values, and many are visually represented in the page display
+  - Created multiple variables and objects, assigned attributes or properties as values, and many are visually represented in the display
 - Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction
-  - Utilized Javascript to create multiple interactions for hamburger menu and modal gallery, both within the gallery and the modal, including click and key events
+  - Utilized click and key events to create multiple interactions for hamburger menu and lightbox, both in the gallery and on the modal
 NOTE: I attempted to experiment as much as possible with reaching similar results for similar problems with different approaches and methodology.
