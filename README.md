@@ -55,3 +55,7 @@ A majority of possible project requirements were met. As content progressed, I w
   - Utilized click and key events to create multiple interactions for hamburger menu and lightbox, both in the gallery and on the modal
 
 NOTE: I attempted to experiment as much as possible with reaching similar results for similar problems with different approaches and methodology.
+
+## THINGS TO DO:
+- Address accessibility issues
+- Replace JotForm with my own backend functionality for form collection
