@@ -48,7 +48,7 @@ A majority of possible project requirements were met. As content progressed, I w
 - Create and populate a JavaScript array with one or more values and display the contents of some or all of the array on your page
   - Utilized an array for populating gallery image container and experimented with generating nav links from an array
 - Create a Javascript loop that dynamically displays HTML on your page
-  - Generated header and footer on every page and generated gallery display of images with loops
+  - Generated header on every page and generated gallery display of images with loops
 - Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page
   - Created multiple variables and objects, assigned attributes or properties as values, and many are visually represented in the display
 - Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction
