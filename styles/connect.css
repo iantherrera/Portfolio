@@ -85,8 +85,12 @@
 
 /* Text Sizing & Color properties */
 #input_11 {
+    font-size: 1.75vh;
     font-weight: 600;
-    font-size: 1em;
+}
+
+.contactField>label {
+    font-size: 2vh;
 }
 
 .error-navigation-message {
@@ -102,21 +106,28 @@
 }
 
 
-/* Hides JotForm redundant messaging */
-p {
-    display: none;
-}
-
-
 /* Active page link style */
 nav>ul>:nth-child(3)>a {
     border-bottom: solid rgb(104, 197, 227)
 }
+
+
+
+/* Hides JotForm redundant messaging */
+.form-button-error>p {
+    display: none;
+}
+
 
 /* Media queries & breakpoints */
 @media screen and (min-width: 1920px) {
 
     #connectContainer {
         max-width: 40vw;
+    }
+
+    .error-navigation-message {
+        font-size: .8em;
+        color: #caf0f8ff;
     }
 }
