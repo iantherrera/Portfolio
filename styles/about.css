@@ -62,13 +62,6 @@ nav>ul>:first-child>a {
     }
 }
 
-@media screen and (min-width: 600px) and (orientation: landscape) {
-
-    .textSection {
-        max-height: 90vh;
-    }
-}
-
 @media screen and (min-width: 1024px) {
 
     main {
