@@ -90,7 +90,7 @@
 }
 
 .contactField>label {
-    font-size: 2vh;
+    font-size: 1em;
 }
 
 .error-navigation-message {
@@ -123,6 +123,10 @@ nav>ul>:nth-child(3)>a {
 
     #connectContainer {
         max-width: 40vw;
+    }
+
+    .contactField>label {
+        font-size: 2vh;
     }
 
     .error-navigation-message {
