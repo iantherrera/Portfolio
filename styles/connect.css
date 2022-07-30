@@ -85,7 +85,7 @@
 
 /* Text Sizing & Color properties */
 #input_11 {
-    font-size: 1.75vh;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -112,7 +112,6 @@ nav>ul>:nth-child(3)>a {
 }
 
 
-
 /* Hides JotForm redundant messaging */
 .form-button-error>p {
     display: none;
@@ -129,5 +128,9 @@ nav>ul>:nth-child(3)>a {
     .error-navigation-message {
         font-size: .8em;
         color: #caf0f8ff;
+    }
+
+    #input_11 {
+        font-size: 1.75vh;
     }
 }
