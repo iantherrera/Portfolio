@@ -41,7 +41,32 @@ nav>ul>:first-child>a {
 /* Media queries & breakpoints */
 @media screen and (min-width: 600px) {
 
+    #headshotContainer {
+        margin: auto;
+        max-width: 40vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+
     main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #headshot {
+        max-height: 60vh;
+    }
+
+    .textSection {
+        max-height: 90vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    main {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
@@ -54,11 +79,22 @@ nav>ul>:first-child>a {
         max-height: 45vh;
     }
 
-    .experienceSubSection {
+    .textSubSection {
         display: flex;
         align-items: center;
         margin-top: 1.5em;
         gap: 1.5em;
+    }
+
+    .aboutSubSection {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+
+    .textSection {
+        max-height: 90vh;
     }
 }
 
@@ -66,6 +102,7 @@ nav>ul>:first-child>a {
 
     main {
         display: flex;
+        flex-direction: row;
     }
 
     .textSection {
@@ -73,7 +110,7 @@ nav>ul>:first-child>a {
         max-height: 70vh;
     }
 
-    .experienceSubSection {
+    .textSubSection {
         display: unset;
     }
 }
@@ -85,12 +122,5 @@ nav>ul>:first-child>a {
         align-self: center;
         padding: 2.5%;
         border-radius: 20px;
-    }
-
-    .experienceSubSection {
-        display: flex;
-        align-items: center;
-        margin-top: 1.5em;
-        gap: 1.5em;
     }
 }
