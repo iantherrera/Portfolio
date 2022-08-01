@@ -71,7 +71,6 @@ const skillList = document.createElement("ul");
 skillList.setAttribute("id", "skillList");
 document.getElementById("skillListSection").appendChild(skillList);
 
-
 // Loop through array of icon images & their attributes
 // Create figure, set class, add to unordered list
 for (let i = 0; i < skillIcons.length; i++) {
@@ -87,10 +86,8 @@ for (let i = 0; i < skillIcons.length; i++) {
     skillFigure.appendChild(iconImage);
 
     // Create figcaption, insert caption contents from array item, add to figure
-    const skillFig = document.getElementsByClassName("skillFig")
-
     let figCaption = document.createElement("figcaption");
     figCaption.classList.add(skillIcons[i].figCapClass);
     figCaption.innerHTML = skillIcons[i].figCap;
-    skillFig[i].appendChild(figCaption);
+    skillFigure.appendChild(figCaption);
 }
