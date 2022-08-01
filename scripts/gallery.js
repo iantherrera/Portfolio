@@ -92,6 +92,7 @@ const images = [
 ];
 
 
+// Populate elements in Design gallery container
 // Create image container for each image in images array
 // Add image container to design container
 for (let i = 0; i < images.length; i++) {
