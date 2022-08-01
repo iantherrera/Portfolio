@@ -5,25 +5,33 @@ main {
     justify-content: space-around;
 }
 
-ul {
+#skillListSection {
+    width: 90%;
+    margin: auto;
+}
+
+#skillList {
+    list-style-type: none;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: .5em;
+    padding: 1em;
 }
 
-.bubbleFrame ul {
-    list-style-type: none;
-}
-
-#skillList ul li {
-    text-transform: uppercase;
-    font-size: 1.25em;
-    padding: .7em;
+.skillLogo {
+    height: 3.5em;
 }
 
 #codingTitle {
     margin-bottom: 0;
+}
+
+.skillFig {
+    text-transform: uppercase;
+    font-size: .75em;
+    padding: .7em;
 }
 
 #coding a {
@@ -52,6 +60,14 @@ ul {
     border-left: 3px solid black;
     border-right: 3px solid black;
     border-bottom: unset;
+}
+
+
+/* Text Sizing & Color properties */
+.skillFigCap {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: .25em;
 }
 
 
@@ -121,6 +137,8 @@ nav>ul>:nth-child(2)>a {
 
     #skillset {
         grid-area: skillset;
+        min-height: 100%;
+        align-self: center;
     }
 
     #coding {
@@ -130,6 +148,7 @@ nav>ul>:nth-child(2)>a {
 
     #skillList {
         grid-area: skillList;
+        padding: 1em;
     }
 
     #portfolio {
@@ -149,6 +168,10 @@ nav>ul>:nth-child(2)>a {
 }
 
 @media screen and (min-width: 1920px) {
+
+    .skillFigCap {
+        font-size: 2vh
+    }
 
     #design {
         overflow-y: auto;
