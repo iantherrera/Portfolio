@@ -12,10 +12,8 @@ main {
 
 #skillList {
     list-style-type: none;
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: .5em;
     padding: 1em;
 }
@@ -123,6 +121,18 @@ nav>ul>:nth-child(2)>a {
 
 
 /* Media queries & breakpoints */
+@media screen and (min-width: 600px) {
+    #skillList {
+        list-style-type: none;
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: .5em;
+        padding: 1em;
+    }
+}
+
 @media screen and (min-width: 1024px) {
 
     main {
