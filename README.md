@@ -54,7 +54,7 @@ A majority of possible project requirements were met. As content progressed, I w
 - Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction
   - Utilized click and key events to create multiple interactions for hamburger menu and lightbox, both in the gallery and on the modal
 
-NOTE: I attempted to experiment as much as possible with reaching similar results for similar problems with different approaches and methodology.
+NOTE: I relied on vanilla javascript to focus on attaining maximum proficiency with core language. I attempted to experiment as much as possible with reaching similar results for similar problems with different approaches and methodology.
 
 ## THINGS TO DO:
 - Address accessibility issues
