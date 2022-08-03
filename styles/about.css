@@ -152,4 +152,8 @@ nav>ul>:first-child>a {
         display: flex;
         flex-direction: row;
     }
+
+    #headshot {
+        width: auto;
+    }
 }
