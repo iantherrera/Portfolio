@@ -205,4 +205,8 @@ nav>ul>:nth-child(2)>a {
     #design {
         overflow-y: auto;
     }
+
+    .skillsetSubSection {
+        display: flex;
+    }
 }
