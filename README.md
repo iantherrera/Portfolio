@@ -46,15 +46,17 @@ A majority of possible project requirements were met. As content progressed, I w
 
 ## JAVASCRIPT FEATURES INCLUDED:
 - Create and populate a JavaScript array with one or more values and display the contents of some or all of the array on your page
-  - Utilized an array for populating gallery image container and experimented with generating nav links from an array
+  - Utilized an array for populating gallery image container, nav links, and text sections on About and Portfolio pages
 - Create a Javascript loop that dynamically displays HTML on your page
-  - Generated header on every page and generated gallery display of images with loops
+  - Generated header on every page, gallery display of images, and text sections with loops
 - Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page
   - Created multiple variables and objects, assigned attributes or properties as values, and many are visually represented in the display
 - Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction
   - Utilized click and key events to create multiple interactions for hamburger menu and lightbox, both in the gallery and on the modal
 
-NOTE: I relied on vanilla javascript to focus on attaining maximum proficiency with core language. I attempted to experiment as much as possible with reaching similar results for similar problems with different approaches and methodology.
+NOTE: As proof of concept and an opportunity to exercise my skills, I generated a majority of the document elements with Javascript. 
+I relied on vanilla javascript to focus on attaining maximum proficiency with core language.
+I also experimented with reaching similar results for similar problems with different solutions and methodology.
 
 ## THINGS TO DO:
 - Address accessibility issues
