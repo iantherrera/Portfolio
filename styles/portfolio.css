@@ -133,6 +133,20 @@ nav>ul>:nth-child(2)>a {
     }
 }
 
+@media screen and (min-width: 600px) and (orientation: landscape) {
+
+    .skillsetSubSection {
+        display: flex;
+        align-items: center;
+        margin-top: 1.5em;
+        gap: 1.5em;
+    }
+
+    .skillsetSubSection:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
 @media screen and (min-width: 1024px) {
 
     main {
@@ -149,6 +163,11 @@ nav>ul>:nth-child(2)>a {
         grid-area: skillset;
         min-height: 100%;
         align-self: center;
+    }
+
+    .skillsetSubSection {
+        display: unset;
+        display: inherit;
     }
 
     #coding {

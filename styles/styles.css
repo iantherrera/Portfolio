@@ -80,7 +80,7 @@ header {
 footer {
     width: 100%;
     color: #caf0f8ff;
-    background-color: rgba(13, 27, 53, .5);
+    background-color: rgba(202, 240, 248, .05);
     text-align: center;
     padding: .5em;
     position: relative;
@@ -92,8 +92,11 @@ footer {
     display: inline-block;
     width: 100%;
     align-self: center;
+    padding-top: .5em;
     padding-bottom: .5em;
     margin-bottom: .5em;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
     border-bottom: 5px double #caf0f8ff;
     text-transform: uppercase;
 }
@@ -131,23 +134,21 @@ footer {
 }
 
 .textSubSection {
-    margin-top: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .textSubSection:first-child {
     margin-top: 0;
 }
 
-.textIcon {
-    max-height: 100px;
-}
-
-p:first-child {
-    margin-top: 0;
-}
-
-p:last-child {
+.textSubSection:last-child {
     margin-bottom: 0;
+}
+
+.textIcon {
+    height: 5em;
+    max-width: 5em;
 }
 
 /* Nav menu display properties */
@@ -219,15 +220,21 @@ h3 {
     color: #caf0f8ff;
 }
 
+.textIconFigCap {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #caf0f8ff;
+    line-height: 1.25em;
+    padding: .25em;
+}
+
 p {
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: 400;
     color: rgb(13, 27, 53);
     background-color: rgba(202, 240, 248, .7);
     line-height: 1.3em;
     text-align: center;
-    margin-top: .5em;
-    margin-bottom: 1.5em;
     padding: .5em .75em;
     border-radius: 20px;
 }
@@ -240,7 +247,7 @@ strong {
 .title {
     font-weight: 500;
     color: #caf0f8ff;
-    top: 0;
+    background-color: rgba(202, 240, 248, .05);
 }
 
 #name {
@@ -359,12 +366,6 @@ main>section {
         max-height: 90vh;
     }
 
-    .skillsetSubSection {
-        display: flex;
-        align-items: center;
-        margin-top: 1.5em;
-        gap: 1.5em;
-    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -378,7 +379,7 @@ main>section {
     }
 
     .skillsetSubSection {
-        display: unset;
+        display: inherit;
     }
 }
 
@@ -414,6 +415,10 @@ main>section {
 
     #footContainer {
         font-size: 2vh;
+    }
+
+    .textSection {
+        align-self: center;
     }
 
     .textSubSection {

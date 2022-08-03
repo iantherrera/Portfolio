@@ -61,14 +61,17 @@ nav>ul>:first-child>a {
         max-height: 90vh;
     }
 
-    .aboutSubSection,
-    .experienceSubSection {
+    .textSubSection {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 1.5em;
         gap: 1.5em;
     }
+
+    .textSubSection:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -97,12 +100,24 @@ nav>ul>:first-child>a {
     .aboutSubSection {
         flex-direction: column;
     }
+
+    .experienceSubSection:nth-child(even) {
+        flex-direction: row-reverse;
+    }
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
 
+    main {
+        display: flex;
+    }
+
     .textSection {
         max-height: 90vh;
+    }
+
+    .aboutSubSection {
+        flex-direction: row;
     }
 }
 
@@ -118,7 +133,8 @@ nav>ul>:first-child>a {
         max-height: 70vh;
     }
 
-    .experienceSubSection {
+    .textSubSection {
+        display: inherit;
         flex-direction: column;
     }
 }
@@ -132,8 +148,8 @@ nav>ul>:first-child>a {
         border-radius: 20px;
     }
 
-    .aboutSubSection,
-    .experienceSubSection {
+    .textSubSection {
+        display: flex;
         flex-direction: row;
     }
 }

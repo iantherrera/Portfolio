@@ -1,72 +1,65 @@
+import { createSection } from "./textSection.js";
+
 // Array of elements for About section
 const aboutElements = [
     {
-        subSectionClass1: "textSubSection",
+        sectionId: "about",
+        h2Contents: "ABOUT",
+    },
+
+    {
         subSectionClass2: "aboutSubSection",
-        iconContainerClass: "iconContainer",
-        iconClass: "textIcon",
         iconSrc: "../Portfolio/images/illustrations/about/hillsun.png",
         iconAlt: "illustration of hill with sun rising",
+        figCap: "BIO",
         text: "I was born in the Philippines and raised primarily in the beautiful state of Kentucky. My amazing partner, Ashley, & I share our lives with two beautiful children, Elijah & June."
     },
 
     {
-        subSectionClass1: "textSubSection",
         subSectionClass2: "aboutSubSection",
-        iconContainerClass: "iconContainer",
-        iconClass: "textIcon",
         iconSrc: "../Portfolio/images/illustrations/about/house.png",
         iconAlt: "illustration of home",
+        figCap: "HOME",
         text: "We've enjoyed establishing our family's roots in the city of Louisville, and we've come to enjoy its diverse and cosmopolitan aspects. From exploring its insanely good local dining scene to enjoying its solid pull of entertainment options, we've truly come to love this town."
     },
 
     {
-        subSectionClass1: "textSubSection",
         subSectionClass2: "aboutSubSection",
-        iconContainerClass: "iconContainer",
-        iconClass: "textIcon",
         iconSrc: "../Portfolio/images/illustrations/about/tentriver.png",
         iconAlt: "illustration of tent by river",
+        figCap: "HAPPY PLACE",
         text: "Living in Louisville, I've been grateful for easy access to a state filled with seeemingly endless natural beauty. The opportunity to hike and explore, with my family, is truly one of my greatest joys. Our family's ongoing project to visit every waterfall that we can find in Kentucky has been a gift unto itself."
     },
 
     {
-        subSectionClass1: "textSubSection",
         subSectionClass2: "aboutSubSection",
-        iconContainerClass: "iconContainer",
-        iconClass: "textIcon",
         iconSrc: "../Portfolio/images/illustrations/about/openbook.png",
         iconAlt: "illustration of open book",
-        text: "With a technical aptitude and affinity for math & science, I began my college studies in Engineering at Purdue University. However, as a creative soul, with a lifelong love of drawing & illustration, I pursued my passion into the art program at the University of Kentucky and later at the University of Louisville, where I received formal training in Art Studio with a focus in Graphic Design & Illustration. I also minored in Art History to satisfy my interest in providing context to artistic styles & aesthetic sensibilities."
+        figCap: "EDUCATION",
+        text: "With a technical aptitude and affinity for math & science, I began my college studies in Engineering at Purdue University. However, as a creative soul, with a lifelong love of drawing & illustration, I pursued my passion into the art program at the University of Kentucky and later at the University of Louisville, where I received formal training in Art Studio with a focus in Graphic Design & Illustration."
     },
 
     {
-        subSectionClass1: "textSubSection",
         subSectionClass2: "aboutSubSection",
-        iconContainerClass: "iconContainer",
-        iconClass: "textIcon",
         iconSrc: "../Portfolio/images/illustrations/about/restaurant1.png",
         iconAlt: "illustration of plate with fork and knife ",
+        figCap: "HOSPITALITY CAREER",
         text: "I initially worked in the hospitality industry as a means of support, but it soon developed into a career. Working with food satisfied my creative urges as well as being a fulfilling environment for a naturally social person."
     },
 
     {
-        subSectionClass1: "textSubSection",
         subSectionClass2: "aboutSubSection",
-        iconContainerClass: "iconContainer",
-        iconClass: "textIcon",
         iconSrc: "../Portfolio/images/illustrations/about/light.png",
         iconAlt: "illustration of lightbulb",
+        figCap: "TECH ASPIRATIONS",
         text: "Although satisfied with achieving my ambitions within the hospitality industry, I felt a calling to my original vocational pursuits. At the end of 2021, I heeded the call by focusing my efforts toward a transition into the tech industry, in hopes of fulfilling my natural talents & technical skills, and establishing myself in a satisfying career in development."
     },
 
     {
-        subSectionClass1: "textSubSection",
         subSectionClass2: "aboutSubSection",
-        iconContainerClass: "iconContainer",
-        iconClass: "textIcon",
         iconSrc: "../Portfolio/images/illustrations/about/deal.png",
         iconAlt: "illustration of handshake",
+        figCap: "CONTACT ME",
         text1: "Thank you for spending a bit of your time getting to know a little about me. Feel free to send me a message on my ",
         linkInsertClass: "navLinks",
         linkInsertHref: "connect.html",
@@ -75,62 +68,60 @@ const aboutElements = [
     }
 ];
 
-// Populate elements in About section
-// Create About section main div, set class, add to About section
-const aboutSection = document.getElementById("about");
 
-const mainAboutDiv = document.createElement("div");
-mainAboutDiv.classList.add("textContainer");
-mainAboutDiv.setAttribute("id", "aboutTextContainer");
-aboutSection.appendChild(mainAboutDiv);
+// Array of elements for Experience section
+const experienceElements = [
+    {
+        sectionId: "experience",
+        h2Contents: "EXPERIENCE",
+    },
 
-// Create header container, add to About section main div
-const aboutHeaderContainer = document.createElement("h3");
-aboutHeaderContainer.setAttribute("id", "aboutTextHeaderContainer");
-mainAboutDiv.appendChild(aboutHeaderContainer);
+    {
+        subSectionClass2: "experienceSubSection",
+        iconSrc: "../Portfolio/images/illustrations/experience/designtools.png",
+        iconAlt: "illustration of pen & paintbrush",
+        figCap: "VISUAL ARTS",
+        text: "My love for the visual arts has always been a constant passion. I've been happy to pursue freelance graphic design & illustration, throughout my working life."
+    },
 
-// Loop through elements array for About section
-// Create About text subsection div, add to header container
-for (let i = 0; i < aboutElements.length; i++) {
-    let subSectionContainer = document.createElement("div");
-    subSectionContainer.classList.add(aboutElements[i].subSectionClass1);
-    subSectionContainer.classList.add(aboutElements[i].subSectionClass2);
-    aboutHeaderContainer.appendChild(subSectionContainer);
+    {
+        subSectionClass2: "experienceSubSection",
+        iconSrc: "../Portfolio/images/illustrations/experience/teamsales.png",
+        iconAlt: "illustration of team",
+        figCap: "HOSPITALITY",
+        text: "In the hospitality industry, I've worked in almost every type of restaurant from short-order, in my humble beginnings, to fine dining, where I thrived at the peak of my skills as a captain on the dining room floor. My experience carried me, most recently, into management roles, where I have enjoyed applying my expertise into coordinating staffing & operations."
+    },
 
-    // Create image div container, add to About text subsection div
-    let iconContainer = document.createElement("div");
-    iconContainer.classList.add(aboutElements[i].iconContainerClass);
-    subSectionContainer.appendChild(iconContainer);
+    {
+        subSectionClass2: "experienceSubSection",
+        iconSrc: "../Portfolio/images/illustrations/experience/microprocessor.png",
+        iconAlt: "illustration of microprocessor",
+        figCap: "TECH SUPPORT",
+        text: "Early in 2022, I made the transition into the tech industry, and I'm currently serving in a technical support role for maintaining point-of-sale systems offered by Global Payments in Jeffersonville, Indiana. I've worked as a manager with many similar systems, and it's a been a particular pleasure to provide assistance to managers, whom aren't able to provide satisfying customer service, due to a technical problem that is out of their hands. Technology should be a solution, not a problem, and it's particularly fulfilling to prove that to be true."
+    },
 
-    // Embed image with attributes in image div container
-    let icon = document.createElement("img");
-    icon.classList.add(aboutElements[i].iconClass);
-    icon.src = aboutElements[i].iconSrc;
-    icon.alt = aboutElements[i].iconAlt;
-    iconContainer.appendChild(icon);
+    {
+        subSectionClass2: "experienceSubSection",
+        iconSrc: "../Portfolio/images/illustrations/experience/connector.png",
+        iconAlt: "illustration of technology connecting",
+        figCap: "PROGRESSION",
+        text: "I'm excited to bring a strong foundation in customer service and effective team-based dynamics into a technologically-driven environment. I'm passionate about utilizing my creative talent in the tech industry and look forward to continuing to hone and broaden my skills."
+    },
 
-    // Create paragraph container, insert contents, add to About text subsection div
-    let sectionText = document.createElement("p");
-    subSectionContainer.appendChild(sectionText);
-
-    // Check if array element only contains text key, add text contents to p container
-    if ("text" in aboutElements[i]) {
-        sectionText.innerHTML = aboutElements[i].text;
+    {
+        subSectionClass2: "experienceSubSection",
+        iconSrc: "../Portfolio/images/illustrations/experience/deal.png",
+        iconAlt: "illustration of handshake",
+        figCap: "CONTACT ME",
+        text1: "If you'd like to know more about what experience I could bring to your organization, please reach out to me on my ",
+        linkInsertClass: "navLinks",
+        linkInsertHref: "connect.html",
+        linkInsertText: "Connect",
+        text2: " page."
     }
+];
 
-    // Check if array element contains alt text key for contents that includes anchor link
-    if ("text1" in aboutElements[i]) {
-        // Add initial text before link to p container
-        sectionText.innerHTML = aboutElements[i].text1;
+// Call function to create About text section
+createSection(aboutElements);
 
-        // Create anchor element, set attributes, add to p container
-        let linkInsert = document.createElement("a");
-        linkInsert.classList.add(aboutElements[i].linkInsertClass);
-        linkInsert.href = aboutElements[i].linkInsertHref;
-        linkInsert.innerHTML = aboutElements[i].linkInsertText;
-        sectionText.appendChild(linkInsert);
-
-        // Add remaining text content to p container
-        sectionText.innerHTML += aboutElements[i].text2;
-    }
-}
+createSection(experienceElements);
