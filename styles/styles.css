@@ -239,9 +239,12 @@ p {
     border-radius: 20px;
 }
 
-strong {
-    font-weight: bolder;
+b {
+    font-weight: bold;
     font-style: italic;
+    color: #0d1b35;
+    background-color: rgb(22, 93, 117, .4);
+    padding: .2em;
 }
 
 .title {
@@ -276,10 +279,11 @@ nav a:hover {
     border-bottom: solid rgb(104, 197, 227);
 }
 
-strong:hover {
+b:hover {
     color: #caf0f8ff;
+    background-color: rgb(22, 93, 117, .8);
     cursor: pointer;
-    transition: all 250ms ease-in;
+    transition: all 250ms ease-in-out;
 }
 
 

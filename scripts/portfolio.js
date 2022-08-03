@@ -12,7 +12,7 @@ const skillsetElements = [
         iconSrc: "../Portfolio/images/illustrations/skills/brain.png",
         iconAlt: "illustration of brain",
         figCap: "INTELLIGENCE",
-        text: "Driven & highly motivated, with a love of problem-solving and an insatiable curiosity about how things work, I have been able to debug my way into proficiencies in several coding languages. I am a disciplined fast learner, and I enjoy the challenge and research required to break down a problem into its smaller, solveable components."
+        text: "Driven & highly motivated, with a love of <b>problem-solving</b> and an insatiable curiosity about how things work, I have been able to debug my way into proficiencies in several coding languages. I am a <b>disciplined fast learner</b>, and I enjoy the challenge and research required to break down a problem into its smaller, solveable components."
     },
 
     {
@@ -20,7 +20,7 @@ const skillsetElements = [
         iconSrc: "../Portfolio/images/illustrations/skills/laptopbooks2.png",
         iconAlt: "illustration of laptop & books",
         figCap: "CS50X",
-        text: "At the end of 2021, I began participation in Harvard University's CS50x course. Thus far, CS50x has provided me with an understanding of fundamentals in computer science, as well as coding proficiency in C & Python, and a familiarity with SQL. This program has been instrumental in instilling & developing the critical thinking and self-driven research skills that are required for success in coding and remaining current in a field that is constantly changing."
+        text: "At the end of 2021, I began participation in Harvard University's CS50X course. Thus far, CS50X has provided me with an understanding of fundamentals in computer science, as well as coding proficiency in <b>C & Python</b>, and a familiarity with <b>SQL</b>. This program has been instrumental in instilling & developing the <b>critical thinking</b> and self-driven <b>research skills</b> that are required for success in coding and remaining current in a field that is constantly changing."
     },
 
     {
@@ -28,7 +28,7 @@ const skillsetElements = [
         iconSrc: "../Portfolio/images/illustrations/skills/develop.png",
         iconAlt: "illustration of coding editor on computer screen",
         figCap: "CODE LOUISVILLE",
-        text: "In the spring of 2022, I began participation in the CODE Louisville program on a Front End Web Development track. CODE Louisville is a fantastic program seeking to strengthen our local tech community & industry by offering training, education & mentorship to motivated local residents, all at no cost to its students. This program is currently facilitating the development of my skills in HTML, CSS & Javascript, and I'm looking forward to future training in frameworks & backend functionality which will build on my currently growing skills. I am truly grateful to the program & its mentors for helping me develop this website as my Capstone Project!"
+        text: "In the spring of 2022, I began participation in the CODE Louisville program on a Front End Web Development track. CODE Louisville is a fantastic program seeking to strengthen our local tech community & industry by offering training, education & mentorship to motivated local residents, all at no cost to its students. This program is currently facilitating the development of my skills in <b>HTML, CSS & Javascript</b>, and I'm looking forward to future training in frameworks & backend functionality which will build on my currently growing skills. I am truly grateful to the program & its mentors for helping me develop this website as my Capstone Project!"
     },
 
     {
@@ -36,7 +36,7 @@ const skillsetElements = [
         iconSrc: "../Portfolio/images/illustrations/skills/webpicture.png",
         iconAlt: "illustration of computer screen with graphics icon",
         figCap: "DESIGN",
-        text: "I enjoy proficiency in numerous visual design applications. I offer an experienced design sensibility, with a particular emphasis on strong layout & UX design, and the capability of merging pleasurable aesthetic experiences with a clear communication of content."
+        text: "I enjoy proficiency in numerous visual design applications. I offer an experienced design sensibility, with a particular emphasis on <b>strong layout & UX design</b>, and the capability of merging pleasurable aesthetic experiences with a <b>clear communication of content</b>."
     },
 
     {
@@ -44,7 +44,7 @@ const skillsetElements = [
         iconSrc: "../Portfolio/images/illustrations/skills/transfer2.png",
         iconAlt: "illustration of person with outward connecting points",
         figCap: "SYNERGY",
-        text: "Having worked extensively in customer service and with facilitating team-based work, I truly enjoy creating adaptive & enjoyable user-oriented experiences in fast-paced, rapidly changing, team-based environments."
+        text: "Having worked extensively in customer service and with <b>facilitating team-based work</b>, I truly enjoy creating adaptive & enjoyable <b>user-oriented experiences</b> in fast-paced, rapidly changing, team-based environments."
     },
 
     {
