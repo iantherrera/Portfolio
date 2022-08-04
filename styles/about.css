@@ -94,7 +94,6 @@ nav>ul>:first-child>a {
         display: flex;
         align-items: center;
         margin-top: 1.5em;
-        gap: 1.5em;
     }
 
     .aboutSubSection {
