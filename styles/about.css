@@ -96,6 +96,10 @@ nav>ul>:first-child>a {
         margin-top: 1.5em;
     }
 
+    .experienceSubSection {
+        gap: 1.5em;
+    }
+
     .aboutSubSection {
         flex-direction: column;
     }
