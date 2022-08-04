@@ -54,7 +54,7 @@ A majority of possible project requirements were met. As content progressed, I w
 - Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction
   - Utilized click and key events to create multiple interactions for hamburger menu and lightbox, both in the gallery and on the modal
 
-NOTE: As proof of concept and an opportunity to exercise my skills, I generated a majority of the document elements with Javascript. 
+NOTE: Despite the risk of breaking site functionality when lacking browser Javascript support, as proof of concept and an opportunity to exercise my skills, I generated a majority of the document elements with Javascript. 
 I relied on vanilla javascript to focus on attaining maximum proficiency with core language.
 I also experimented with reaching similar results for similar problems with different solutions and methodology.
 
