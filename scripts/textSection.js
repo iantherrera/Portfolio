@@ -71,6 +71,4 @@ export function createSection(elementArray) {
             sectionText.innerHTML += elementArray[i].text2;
         }
     }
-
-    console.log("script loaded")
 };

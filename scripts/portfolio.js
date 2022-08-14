@@ -11,8 +11,8 @@ const skillsetElements = [
         subSectionClass2: "skillsetSubSection",
         iconSrc: "../Portfolio/images/illustrations/skills/brain.png",
         iconAlt: "illustration of brain",
-        figCap: "INTELLIGENCE",
-        text: "Driven & highly motivated, with a love of <b>problem-solving</b> and an insatiable curiosity about how things work, I have been able to debug my way into proficiencies in several coding languages. I am a <b>disciplined fast learner</b>, and I enjoy the challenge and research required to break down a problem into its smaller, solveable components."
+        figCap: "PROBLEM-SOLVING",
+        text: "I've always enjoyed the process of solving problems, driven by an innate curiosity about how things work. I have been able to debug my way into proficiencies in several coding languages. I am a <b>disciplined fast learner</b>, and I enjoy the challenge and research required to break down a problem into its smaller, solveable components."
     },
 
     {
