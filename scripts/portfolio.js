@@ -128,6 +128,15 @@ const skillIcons = [
     },
 
     {
+        src: "../Portfolio/images/skillsLogos/flask_logo.svg",
+        class: "skillLogo",
+        alt: "Flask logo",
+        figClass: "skillFig",
+        figCapClass: "skillFigCap",
+        figCap: "FLASK"
+    },
+
+    {
         src: "../Portfolio/images/skillsLogos/Adobe_Creative_Cloud_rainbow_icon.svg",
         class: "skillLogo",
         alt: "Adobe Creative Cloud logo",
