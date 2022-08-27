@@ -20,7 +20,7 @@ const skillsetElements = [
         iconSrc: "../Portfolio/images/illustrations/skills/laptopbooks2.png",
         iconAlt: "illustration of laptop & books",
         figCap: "CS50X",
-        text: "At the end of 2021, I began participation in Harvard University's CS50X course. Thus far, CS50X has provided me with an understanding of fundamentals in computer science, as well as coding proficiency in <b>C & Python</b>, and a familiarity with <b>SQL</b>. This program has been instrumental in instilling & developing the <b>critical thinking</b> and self-driven <b>research skills</b> that are required for success in coding and remaining current in a field that is constantly changing."
+        text: "At the end of 2021, I began participation in Harvard University's CS50X course. Thus far, CS50X has provided me with an understanding of fundamentals in computer science, as well as coding proficiency in <b>C & Python</b>, and a familiarity with <b>SQL</b> & <b>Flask</b>. This program has been instrumental in instilling & developing the <b>critical thinking</b> and self-driven <b>research skills</b> that are required for success in coding and remaining current in a field that is constantly changing."
     },
 
     {
