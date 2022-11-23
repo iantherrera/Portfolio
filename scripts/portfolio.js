@@ -20,7 +20,7 @@ const skillsetElements = [
         iconSrc: "../Portfolio/images/illustrations/skills/laptopbooks2.png",
         iconAlt: "illustration of laptop & books",
         figCap: "CS50X",
-        text: "At the end of 2021, I began participation in Harvard University's CS50X course. Thus far, CS50X has provided me with an understanding of fundamentals in computer science, as well as coding proficiency in <b>C & Python</b>, and a familiarity with <b>SQL</b> & <b>Flask</b>. This program has been instrumental in instilling & developing the <b>critical thinking</b> and self-driven <b>research skills</b> that are required for success in coding and remaining current in a field that is constantly changing."
+        text: "At the end of 2021, I began participation in Harvard University's CS50X course. Thus far, CS50X has provided me with an understanding of fundamentals in computer science, as well as competencies in <b>C & Python</b>, and a familiarity with <b>SQL</b> & <b>Flask</b>. This program has been instrumental in instilling & developing the <b>critical thinking</b> and self-driven <b>research skills</b> that are required for success in coding and remaining current in a field that is constantly changing."
     },
 
     {
@@ -28,7 +28,7 @@ const skillsetElements = [
         iconSrc: "../Portfolio/images/illustrations/skills/develop.png",
         iconAlt: "illustration of coding editor on computer screen",
         figCap: "CODE LOUISVILLE",
-        text: "In the spring of 2022, I began participation in the CODE Louisville program on a Front End Web Development track. CODE Louisville is a fantastic program seeking to strengthen our local tech community & industry by offering training, education & mentorship to motivated local residents, all at no cost to its students. This program is currently facilitating the development of my skills in <b>HTML, CSS & Javascript</b>, and I'm looking forward to future training in frameworks & backend functionality which will build on my currently growing skills. I am truly grateful to the program & its mentors for helping me develop this website as my Capstone Project!"
+        text: "In the fall of 2022, I completed the CODE Louisville program on a Front End Web Development track. CODE Louisville is a fantastic program seeking to strengthen our local tech community & industry by offering training, education & mentorship to motivated local residents, all at no cost to its students. The initial course in the program facilitated proficieny in <b>HTML, CSS & Javascript</b>. The Capstone Project for the second half of the course developed my proficiency with utilizing <b>React, Express, NodeJS & MongoDB</b> in the form of a full-stack single-page application. I am truly grateful to the program & its mentors for helping me develop this website as the Capstone Project for my first course!"
     },
 
     {
@@ -74,6 +74,15 @@ main.prepend(experienceSection);
 // Array of Skill Icon images and attributes
 const skillIcons = [
     {
+        src: "../Portfolio/images/skillsLogos/React-icon.png",
+        class: "skillLogo",
+        alt: "React logo",
+        figClass: "skillFig",
+        figCapClass: "skillFigCap",
+        figCap: "React"
+    },
+
+    {
         src: "../Portfolio/images/skillsLogos/HTML5_Badge.svg",
         class: "skillLogo",
         alt: "HTML5 logo",
@@ -116,6 +125,33 @@ const skillIcons = [
         figClass: "skillFig",
         figCapClass: "skillFigCap",
         figCap: "PYTHON"
+    },
+
+    {
+        src: "../Portfolio/images/skillsLogos/expressjs-icon.png",
+        class: "skillLogo",
+        alt: "Express logo",
+        figClass: "skillFig",
+        figCapClass: "skillFigCap",
+        figCap: "Express"
+    },
+
+    {
+        src: "../Portfolio/images/skillsLogos/nodejs-logo.png",
+        class: "skillLogo",
+        alt: "Node.js logo",
+        figClass: "skillFig",
+        figCapClass: "skillFigCap",
+        figCap: "Node.js"
+    },
+
+    {
+        src: "../Portfolio/images/skillsLogos/mongodb-icon.png",
+        class: "skillLogo",
+        alt: "MongoDB logo",
+        figClass: "skillFig",
+        figCapClass: "skillFigCap",
+        figCap: "MongoDB"
     },
 
     {
