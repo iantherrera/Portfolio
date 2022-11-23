@@ -128,7 +128,7 @@ const skillIcons = [
     },
 
     {
-        src: "../Portfolio/images/skillsLogos/expressjs-icon.png",
+        src: "../Portfolio/images/skillsLogos/expess-icon.png",
         class: "skillLogo",
         alt: "Express logo",
         figClass: "skillFig",
